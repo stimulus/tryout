@@ -52,7 +52,7 @@ return [
 	|
 	*/
 
-	'locale' => 'en',
+	'locale' => 'nl',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -65,7 +65,7 @@ return [
 	|
 	*/
 
-	'fallback_locale' => 'en',
+	'fallback_locale' => 'nl',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -78,7 +78,7 @@ return [
 	|
 	*/
 
-	'key' => env('APP_KEY', 'SomeRandomString'),
+	'key' => env('APP_KEY', 'asdascasfdsbvf23424rewfdasf32rtrewg2ewagdsa3'),
 
 	'cipher' => MCRYPT_RIJNDAEL_128,
 
@@ -150,7 +150,9 @@ return [
          * Custom Added Service Providers (see Chilion Snoek before changing this!!! <chilion@josephdesign.nl>)
          */
         'TwigBridge\ServiceProvider',
-	],
+        'app\Providers\HelperServiceProvider',
+
+    ],
 
 	/*
 	|--------------------------------------------------------------------------
