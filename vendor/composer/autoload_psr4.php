@@ -6,6 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'app\\' => array($baseDir . '/app'),
     'XdgBaseDir\\' => array($vendorDir . '/dnoegel/php-xdg-base-dir/src'),
     'TwigBridge\\Tests\\' => array($vendorDir . '/rcrowe/twigbridge/tests'),
     'TwigBridge\\' => array($vendorDir . '/rcrowe/twigbridge/src'),
@@ -15,5 +16,4 @@ return array(
     'League\\Flysystem\\' => array($vendorDir . '/league/flysystem/src'),
     'Illuminate\\' => array($vendorDir . '/laravel/framework/src/Illuminate'),
     'ClassPreloader\\' => array($vendorDir . '/classpreloader/classpreloader/src'),
-    'App\\' => array($baseDir . '/app'),
 );

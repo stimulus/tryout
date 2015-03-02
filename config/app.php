@@ -139,12 +139,17 @@ return [
 		/*
 		 * Application Service Providers...
 		 */
-		'App\Providers\AppServiceProvider',
-		'App\Providers\BusServiceProvider',
-		'App\Providers\ConfigServiceProvider',
-		'App\Providers\EventServiceProvider',
-		'App\Providers\RouteServiceProvider',
+		'app\Providers\AppServiceProvider',
+		'app\Providers\BusServiceProvider',
+		'app\Providers\ConfigServiceProvider',
+		'app\Providers\EventServiceProvider',
+		'app\Providers\RouteServiceProvider',
 
+
+        /*
+         * Custom Added Service Providers (see Chilion Snoek before changing this!!! <chilion@josephdesign.nl>)
+         */
+        'TwigBridge\ServiceProvider',
 	],
 
 	/*
@@ -192,6 +197,12 @@ return [
 		'URL'       => 'Illuminate\Support\Facades\URL',
 		'Validator' => 'Illuminate\Support\Facades\Validator',
 		'View'      => 'Illuminate\Support\Facades\View',
+
+        /*
+         * Custom Facades, see Chilion Snoek <chilion@josephdesign.nl> before changing!
+         */
+
+        'Twig' => 'TwigBridge\Facade\Twig',
 
 	],
 

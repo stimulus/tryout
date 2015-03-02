@@ -1,4 +1,6 @@
-<?php namespace App\Http\Controllers;
+<?php
+
+namespace app\Controllers;
 
 class HomeController extends Controller {
 
@@ -20,7 +22,7 @@ class HomeController extends Controller {
 	 */
 	public function __construct()
 	{
-		$this->middleware('auth');
+
 	}
 
 	/**
@@ -30,7 +32,16 @@ class HomeController extends Controller {
 	 */
 	public function index()
 	{
+        $this->middleware('auth');
 		return view('home');
 	}
+
+    public function someTwigTemplateTest()
+    {
+        $this->data = array("var" => "aap");
+
+        return \View::make('twig', $this->data);
+
+    }
 
 }
