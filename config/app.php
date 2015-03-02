@@ -149,7 +149,7 @@ return [
         /*
          * Custom Added Service Providers (see Chilion Snoek before changing this!!! <chilion@josephdesign.nl>)
          */
-        'TwigBridge\ServiceProvider',
+      //  'TwigBridge\ServiceProvider',
         'app\Providers\HelperServiceProvider',
 
     ],
@@ -204,7 +204,7 @@ return [
          * Custom Facades, see Chilion Snoek <chilion@josephdesign.nl> before changing!
          */
 
-        'Twig' => 'TwigBridge\Facade\Twig',
+//        'Twig' => 'TwigBridge\Facade\Twig',
 
 	],
 
