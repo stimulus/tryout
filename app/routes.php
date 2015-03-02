@@ -11,11 +11,7 @@
 |
 */
 
-Route::get('/', 'WelcomeController@index');
-
-Route::get('home', 'HomeController@index');
-Route::get('twig', "HomeController@someTwigTemplateTest");
-
+Route::get("/", "HomeController@index");
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',

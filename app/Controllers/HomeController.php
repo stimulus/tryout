@@ -22,7 +22,7 @@ class HomeController extends Controller {
 	 */
 	public function __construct()
 	{
-
+        $this->middleware('auth');
 	}
 
 	/**
@@ -32,16 +32,8 @@ class HomeController extends Controller {
 	 */
 	public function index()
 	{
-        $this->middleware('auth');
-		return view('home');
+
+		return \View::make("home", $this->data);
 	}
-
-    public function someTwigTemplateTest()
-    {
-        $this->data = array("var" => "aap");
-
-        return \View::make('twig', $this->data);
-
-    }
 
 }
