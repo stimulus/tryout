@@ -15,4 +15,8 @@ class BuddiesController Extends Controller
 
         return View::make("master", $this->data);
     }
+
+    public function time_management(){
+        
+    }
 }
