@@ -17,6 +17,7 @@ class BuddiesController Extends Controller
     }
 
     public function time_management(){
-        
+			
+			$this->data["time_schedule"] = Buddies::schedule(4);
     }
 }
