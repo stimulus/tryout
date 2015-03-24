@@ -1,8 +1,8 @@
 <?php
 
 namespace app\Models\buddies;
-
-class Buddy_scheme extends Eloquent
+use Illuminate\Database\Eloquent\Model;
+class Buddy_scheme extends Model
 {
     protected $table = "buddy_scheme";
 

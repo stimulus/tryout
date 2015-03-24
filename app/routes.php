@@ -17,3 +17,13 @@ Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
 ]);
+
+Route::get('/buddies', array(
+	'as' => 'view_buddies',
+	'uses' => 'BuddiesController@index'
+));
+
+Route::get('/buddies-scheme/{id?}', array(
+	'as' => 'buddies_scheme',
+	'uses' => 'BuddiesController@time_management'
+));

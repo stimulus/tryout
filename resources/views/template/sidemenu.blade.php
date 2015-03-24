@@ -35,6 +35,11 @@
                     <li><a href="../../index2.html"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
                 </ul>
             </li>
+             <li class="treeview">
+                <a href="{{URL::route('view_buddies')}}">
+                    <i class="fa fa-dashboard"></i> <span>Buddies</span> <i class="fa fa-angle-left pull-right"></i>
+                </a>
+            </li>
             <li class="treeview active">
                 <a href="#">
                     <i class="fa fa-files-o"></i>

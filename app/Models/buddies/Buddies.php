@@ -1,8 +1,9 @@
 <?php
 
 namespace app\Models\buddies;
+use Illuminate\Database\Eloquent\Model;
 
-class Buddies extends Eloquent
+class Buddies extends Model
 {
     protected $table = "buddies";
 
